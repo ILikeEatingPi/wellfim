@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <rect width="100" height="100" rx="22" fill="#0B192C"/>
+  <defs>
+    <linearGradient id="favGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#FDE047" />
+      <stop offset="100%" stopColor="#CA8A04" />
+    </linearGradient>
+  </defs>
+  {/* Arching Axon */}
+  <path d="M 38 28 C 55 12, 82 12, 92 38" fill="none" stroke="url(#favGold)" stroke-width="3" stroke-linecap="round"/>
+  {/* Axon Terminal */}
+  <path d="M 92 38 Q 96 32 99 28" fill="none" stroke="url(#favGold)" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M 92 38 Q 97 42 99 46" fill="none" stroke="url(#favGold)" stroke-width="1.8" stroke-linecap="round"/>
+  {/* Soma */}
+  <circle cx="30" cy="38" r="14" fill="url(#favGold)"/>
+  {/* Dendrites */}
+  <path d="M 22 28 L 14 18" stroke="url(#favGold)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 17 38 L 8 38" stroke="url(#favGold)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 20 48 L 11 58" stroke="url(#favGold)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 30 52 L 28 66" stroke="url(#favGold)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 38 50 L 44 64" stroke="url(#favGold)" stroke-width="2" stroke-linecap="round"/>
+  {/* Face */}
+  <circle cx="25" cy="35" r="2" fill="#0B192C"/>
+  <circle cx="33" cy="35" r="2" fill="#0B192C"/>
+  <path d="M 24 41 Q 29 46 34 41" fill="none" stroke="#0B192C" stroke-width="2" stroke-linecap="round"/>
+</svg>

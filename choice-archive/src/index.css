@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 215 35% 97%;
+    --foreground: 215 50% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 50% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 50% 12%;
+
+    --primary: 215 55% 14%;
+    --primary-foreground: 40 30% 96%;
+
+    --secondary: 215 45% 22%;
+    --secondary-foreground: 40 30% 96%;
+
+    --muted: 215 20% 93%;
+    --muted-foreground: 215 15% 45%;
+
+    --accent: 38 65% 58%;
+    --accent-foreground: 215 55% 14%;
+
+    --highlight: 42 50% 62%;
+    --highlight-foreground: 215 55% 14%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 40 30% 96%;
+
+    --border: 215 18% 88%;
+    --input: 215 18% 88%;
+    --ring: 38 65% 58%;
+
+    --radius: 0.75rem;
+
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(215 55% 10%),
+      hsl(215 50% 16%)
+    );
+    --gradient-accent: linear-gradient(
+      135deg,
+      hsl(38 65% 58%),
+      hsl(42 50% 62%)
+    );
+    --shadow-soft: 0 10px 40px -12px hsl(215 55% 14% / 0.2);
+    --shadow-glow: 0 0 60px -15px hsl(38 65% 58% / 0.35);
+  }
+
+  .dark {
+    --background: 215 50% 8%;
+    --foreground: 40 28% 94%;
+
+    --card: 215 45% 12%;
+    --card-foreground: 40 28% 94%;
+
+    --popover: 215 45% 12%;
+    --popover-foreground: 40 28% 94%;
+
+    --primary: 40 28% 94%;
+    --primary-foreground: 215 55% 14%;
+
+    --secondary: 215 40% 20%;
+    --secondary-foreground: 40 28% 94%;
+
+    --muted: 215 25% 16%;
+    --muted-foreground: 215 10% 60%;
+
+    --accent: 38 60% 55%;
+    --accent-foreground: 215 55% 14%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 40 28% 94%;
+
+    --border: 215 20% 18%;
+    --input: 215 20% 18%;
+    --ring: 38 60% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+@keyframes floatSlow {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+.text-gradient-accent {
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
